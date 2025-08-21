@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detetives Digitais</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        
+        <div id="tela-inicial" class="tela active">
+            <h1>Caso: Desinformação Digital</h1>
+            <p>Seja bem-vindo, detetive. Sua missão é investigar a origem de informações falsas nas redes.</p>
+            <button id="btn-iniciar">Iniciar Jogo</button>
+        </div>
+
+        <div id="tela-personagens" class="tela">
+            <h2>Configurar Equipes</h2>
+            <div id="configuracao-equipes">
+                </div>
+            <button id="btn-configurar-proxima">Próxima Etapa</button>
+        </div>
+
+        <div id="tela-suspeitos" class="tela">
+            <h2>Ficha dos Suspeitos</h2>
+            <div id="suspeitos-container" class="suspeitos-container">
+                </div>
+            <button id="btn-ver-noticia">Analisar Notícia</button>
+        </div>
+
+        <div id="tela-jogo" class="tela">
+    <div class="header-jogo">
+        <span id="cronometro">Tempo: 02:00</span>
+        <span id="rodada-info">Rodada 1 de 3</span>
+    </div>
+    <h2 id="titulo-noticia">A Notícia</h2>
+    <p id="conteudo-noticia">O conteúdo da notícia vai aparecer aqui.</p>
+    
+    <div class="votacao-container">
+        <button id="btn-enviar-voto">Enviar Voto</button>
+    </div>
+
+    <div id="painel-interno-professor" class="painel-professor">
+        </div>
+</div>
+
+        <div id="painel-controle" class="tela">
+            </div>
+
+        <div id="tela-revelacao" class="tela">
+            <h2>Relatório de Missão</h2>
+            <p id="resultado-rodada"></p>
+            <button id="btn-proxima-rodada">Próxima Rodada</button>
+        </div>
+
+        <div id="tela-final" class="tela">
+            <h2>Placar Final</h2>
+            <div id="placar-final">
+                </div>
+            <h3 id="vencedor"></h3>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
